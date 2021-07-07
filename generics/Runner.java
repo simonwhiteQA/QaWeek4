@@ -40,6 +40,13 @@ public class Runner {
 	    for (Cage<Animal> c : cageList) {
 	    	System.out.println(c.getCageSize() + " cage: " + c.getCageAnimal());
 	    }
+	    
+	    //Using design patterns create a cat
+	    System.out.println("\n---Add cat via cat builder to empty cage---");
+	    Animal catBuilder = new CatBuilder().name("Bowie").age(9).colour("White").type("Cat").build();
+	    emptyCage.add(catBuilder); //add cat builder to empty cage
+	    System.out.println("Empty Cage Animal: " + emptyCage.getCageAnimal());
+	    
 	}
 
 }
