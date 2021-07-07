@@ -45,7 +45,6 @@ public class translator {
 		String message = " ";
 		String[] splitted = morse.split(" ");
 		for (String i : splitted) {
-			translator.get(i);
 			message = message + translator.get(i);
 		}
 		
